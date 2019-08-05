@@ -1,3 +1,21 @@
+.btn {
+  width: 80%;
+  background-color: #17A2B8;
+  border-radius: 30%;
+  margin: 3% 10% 3% 2%;
+  padding: 5%;
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+@media (max-width:500px) {
+  width: 100%;
+  padding: 4%;
+  border-radius: 3%;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -168,6 +186,25 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.header nav {
+  max-width: 70%;
+  float: right;
+  margin-right: 70px;
+}
+.header nav a {
+  text-decoration: none;
+  color: #212529;
+  font-size: 14px;
+  padding-left: 20px;
+}
+@media (max-width:500px) {
+  .header nav a .header nav {
+    width: 50%;
+  }
+  .header nav a .header nav a {
+    margin-left: 25px;
+  }
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -179,8 +216,30 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
+.home {
+  margin: 0 auto;
+  max-width: 900px;
+}
+.home .header {
+  min-width: 100%;
+  display: inline-block;
+  margin-top: 2%;
+  border-bottom: 2px dashed #C0C0C0;
+}
+.home h1 {
+  font-size: 30px;
+  float: left;
+  margin-left: 70px;
+}
+.home .top-section {
+  margin-left: 70px;
+  margin-right: 70px;
+  border-bottom: 2px dashed #C0C0C0;
+}
 .home .content-section {
-  margin: 30px 0;
+  margin-left: 70px;
+  margin-right: 70px;
+  padding-top: 3%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -209,8 +268,9 @@ img {
   padding-left: 0;
 }
 .home .content-destination {
-  width: 75%;
+  width: 55%;
   margin: 0 auto 30px;
+  padding-top: 3%;
 }
 .home .content-destination img {
   border-radius: 10px;
@@ -220,6 +280,8 @@ img {
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
+  margin-left: 70px;
+  margin-right: 70px;
 }
 .home .content-pick .destination {
   width: 30%;
