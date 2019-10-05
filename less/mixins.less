@@ -1,1 +1,36 @@
 // Mixins in here
+.displayFLex(@justify, @align){
+    display:flex;
+    justify-content:@justify;
+    align-items:@align;
+}
+
+.btn {
+    width:80%;
+    // height:15%;
+    background-color:@eastern-blue;
+    border-radius:20%;
+    // margin:3% 10% 3% 2%;
+    padding:4%;
+
+    font-size:16px;
+    font-weight:500;
+    color:white;
+    text-decoration:none;
+    text-align:center;
+    cursor:pointer;
+
+    @media (max-width:500px) {
+        width:90%;
+        border-radius:30%;
+    }
+}
+
+
+
+        // &:hover {
+        //   .btnChange();
+        //   border:1px solid black;
+        //   }
+    
+             
